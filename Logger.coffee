@@ -26,17 +26,17 @@ class Logger
 		if @level <= Logger.ASSERT
 			console.assert t, @prefix, v...
 
-	log: (t, v...)->
+	log: (v...)->
 		if @level <= Logger.LOG
-			console.log t, @prefix, v...
+			console.log @prefix, v...
 
-	warn: (t, v...)->
+	warn: (v...)->
 		if @level <= Logger.WARN
-			console.warn t, @prefix, v...
+			console.warn @prefix, v...
 
-	error: (t, v...)->
+	error: (v...)->
 		if @level <= Logger.ERROR
-			console.error t, @prefix, v...
+			console.error @prefix, v...
 
 	@DEBUG: 0
 
