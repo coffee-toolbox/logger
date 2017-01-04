@@ -3,7 +3,7 @@ class Logger
 	constructor: (@prefix, @level)->
 		@prefix ?= ""
 		@level ?= if NDEBUG?
-			Logger.WARN
+			Logger.ASSERT
 		else
 			Logger.DEBUG
 
