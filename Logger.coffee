@@ -1,8 +1,8 @@
 'use strict'
 class Logger
 	constructor: (@prefix, @level)->
-		@prefix ?= ""
-		@level ?= if NDEBUG?
+		@prefix ?= ''
+		@level ?= if process.env.NODE_ENV is 'production'
 			Logger.ASSERT
 		else
 			Logger.DEBUG
@@ -42,7 +42,7 @@ class Logger
 
 	@TRACE: 1
 
-	@INFO:2
+	@INFO: 2
 
 	@ASSERT: 3
 
