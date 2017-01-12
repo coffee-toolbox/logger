@@ -1,6 +1,6 @@
 {
   "name": "@coffee-toolbox/logger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Logger in Coffeescript",
   "main": "Logger.coffee",
   "scripts": {
