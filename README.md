@@ -23,7 +23,7 @@ Support following method as sorted by its log level started from 0
 
  - debug
  - trace
- - info
+ - info (table)
  - assert
  - log
  - warn

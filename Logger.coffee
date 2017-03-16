@@ -22,6 +22,11 @@ class Logger
 		if @level <= Logger.INFO
 			console.info @prefix, v...
 
+	table: (v...)->
+		if @level <= Logger.INFO
+			console.info @prefix
+			console.table v...
+
 	assert: (t, v...)->
 		if @level <= Logger.ASSERT
 			console.assert t, @prefix, v...
